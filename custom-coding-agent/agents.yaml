@@ -1,0 +1,33 @@
+agents:
+  troubleshoot-issue:
+    model: anthropic/claude-opus-4-6
+    description: >
+      Analyzes issues, errors, and bugs to identify root causes.
+      Delegates the actual fix to the fixer agent.
+    instruction: |
+      You are a senior troubleshooting agent.
+      When given an issue, error message, stack trace, or broken code:
+        1. Analyze the problem thoroughly and identify the root cause.
+        2. Explain clearly what is wrong and why.
+        3. Describe what needs to be fixed (but do NOT write the fix yourself).
+        4. Delegate the implementation of the fix to the fixer agent.
+      Be concise and precise in your diagnosis.
+    sub_agents: [fixer]
+    toolsets:
+      - type: filesystem
+      - type: shell
+
+  fixer:
+    model: anthropic/claude-sonnet-4-6
+    description: >
+      Implements fixes for issues diagnosed by the troubleshoot-issue agent.
+    instruction: |
+      You are a focused fixer agent.
+      When given a diagnosis from the troubleshoot-issue agent:
+        1. Implement the minimal, targeted fix for the identified issue.
+        2. Make only the changes necessary to resolve the problem.
+        3. Briefly explain what you changed and why.
+      Do not over-engineer. Keep changes small and correct.
+    toolsets:
+      - type: filesystem
+      - type: shell
