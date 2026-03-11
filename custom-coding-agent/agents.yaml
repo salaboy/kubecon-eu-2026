@@ -1,6 +1,6 @@
 agents:
-  troubleshoot-issue:
-    model: anthropic/claude-opus-4-6
+  root:
+    model: anthropic/claude-sonnet-4-6
     description: >
       Analyzes issues, errors, and bugs to identify root causes.
       Delegates the actual fix to the fixer agent.
@@ -18,7 +18,7 @@ agents:
       - type: shell
 
   fixer:
-    model: anthropic/claude-sonnet-4-6
+    model: anthropic/claude-opus-4-6
     description: >
       Implements fixes for issues diagnosed by the troubleshoot-issue agent.
     instruction: |
