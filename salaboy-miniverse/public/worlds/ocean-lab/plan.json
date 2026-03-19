@@ -1,0 +1,738 @@
+{
+  "name": "deep-sea-lab-sealab-2020",
+  "gridCols": 20,
+  "gridRows": 16,
+  "textures": [
+    {
+      "id": "reinforced_steel_grating",
+      "prompt": "straight top-down bird's eye view, seamless texture of dark matte reinforced steel grating, subtle blue bioluminescent strips between panels, industrial, slightly worn, muted metallic dark grey",
+      "role": "floor"
+    },
+    {
+      "id": "curved_pressure_hull_wall",
+      "prompt": "straight top-down bird's eye view, dark grey curved pressure hull plating with prominent rivets, subtle metallic sheen, thick industrial steel, muted color",
+      "role": "wall"
+    },
+    {
+      "id": "aquarium_accent_wall",
+      "prompt": "straight top-down bird's eye view, section of smooth, dark, reinforced submarine interior wall, with a large, glowing blue-green rectangular view panel showing exotic deep-sea creatures and an anglerfish, bioluminescent accents, muted dark grey metallic",
+      "role": "accent_wall"
+    },
+    {
+      "id": "coral_floor_accent",
+      "prompt": "straight top-down bird's eye view, small patch of bioluminescent blue and purple coral formations subtly growing from cracks in dark steel grating, muted glow, natural organic shapes",
+      "role": "accent_floor"
+    }
+  ],
+  "props": [
+    {
+      "id": "holographic_desk_large",
+      "prompt": "straight top-down bird's eye view, futuristic translucent blue curved desk with glowing edges, with monitor and keyboard, retro-futuristic, clean, sleek design",
+      "count": 2,
+      "w": 3,
+      "h": 2.5,
+      "layer": "below",
+      "anchorType": "work"
+    },
+    {
+      "id": "holographic_desk_small",
+      "prompt": "straight top-down bird's eye view, compact futuristic translucent blue curved desk with glowing edges, with monitor and keyboard, retro-futuristic, clean, sleek design",
+      "count": 2,
+      "w": 2.5,
+      "h": 2,
+      "layer": "below",
+      "anchorType": "work"
+    },
+    {
+      "id": "sleek_swivel_chair",
+      "prompt": "straight top-down bird's eye view, sleek silver swivel chair with armrests, retro-futuristic, industrial design, dark grey upholstery",
+      "count": 4,
+      "w": 0.8,
+      "h": 0.8,
+      "layer": "above"
+    },
+    {
+      "id": "observation_dome_window",
+      "prompt": "straight top-down bird's eye view, large circular observation dome window showing a dark deep ocean, vibrant coral reef, bioluminescent jellyfish, and a distant whale, thick riveted silver frame, porthole-style",
+      "count": 1,
+      "w": 6,
+      "h": 2,
+      "layer": "below"
+    },
+    {
+      "id": "submarine_docking_hatch",
+      "prompt": "straight top-down bird's eye view, heavy duty circular submarine docking hatch, thick bolted steel, industrial, slightly weathered, dark metallic",
+      "count": 1,
+      "w": 3,
+      "h": 2,
+      "layer": "below"
+    },
+    {
+      "id": "decompression_chamber_pod",
+      "prompt": "straight top-down bird's eye view, compact cylindrical decompression chamber pod, metallic grey, with small circular porthole, industrial, retro-futuristic, slightly grimy",
+      "count": 1,
+      "w": 2,
+      "h": 2.5,
+      "layer": "below",
+      "anchorType": "utility"
+    },
+    {
+      "id": "futuristic_vending_machine",
+      "prompt": "straight top-down bird's eye view, sleek retro-futuristic vending machine, dark grey metallic with glowing blue display panel, dispensing freeze-dried snacks and electrolyte drinks, industrial design",
+      "count": 1,
+      "w": 1,
+      "h": 1,
+      "layer": "below",
+      "anchorType": "social"
+    },
+    {
+      "id": "sonar_station",
+      "prompt": "straight top-down bird's eye view, sonar station console with a round, glowing green radar screen, buttons and switches, dark metallic finish, retro-futuristic, industrial",
+      "count": 1,
+      "w": 2,
+      "h": 1.5,
+      "layer": "below",
+      "anchorType": "work"
+    },
+    {
+      "id": "pressure_gauge_panel",
+      "prompt": "straight top-down bird's eye view, wall-mounted panel with multiple analog pressure gauges and warning lights, industrial, dark metal, slightly aged, functional, retro-futuristic",
+      "count": 1,
+      "w": 1,
+      "h": 1.5,
+      "layer": "below"
+    },
+    {
+      "id": "equipment_locker_tall",
+      "prompt": "straight top-down bird's eye view, tall waterproof equipment locker, dark grey metal, with latches and a small porthole window, industrial, utilitarian",
+      "count": 2,
+      "w": 1,
+      "h": 1.5,
+      "layer": "below"
+    },
+    {
+      "id": "equipment_locker_short",
+      "prompt": "straight top-down bird's eye view, short waterproof equipment locker bank, dark grey metal, with latches, industrial, utilitarian",
+      "count": 1,
+      "w": 2,
+      "h": 1,
+      "layer": "below"
+    },
+    {
+      "id": "lab_bench",
+      "prompt": "straight top-down bird's eye view, industrial lab bench, dark grey metallic surface, with microscopes, specimen jars containing glowing sea creatures, and scientific instruments, slightly cluttered but organized",
+      "count": 1,
+      "w": 3.5,
+      "h": 1.5,
+      "layer": "below",
+      "anchorType": "utility"
+    },
+    {
+      "id": "water_recycling_station",
+      "prompt": "straight top-down bird's eye view, complex water recycling station, dark grey metallic unit with visible tubes, filters, and small glowing indicators, industrial, functional, retro-futuristic",
+      "count": 1,
+      "w": 2.5,
+      "h": 1,
+      "layer": "below",
+      "anchorType": "utility"
+    },
+    {
+      "id": "memorial_plaque",
+      "prompt": "straight top-down bird's eye view, small metallic memorial plaque mounted on a wall, subtle engraved text, dark patina, understated",
+      "count": 1,
+      "w": 1,
+      "h": 0.5,
+      "layer": "below"
+    },
+    {
+      "id": "emergency_oxygen_tanks",
+      "prompt": "straight top-down bird's eye view, three emergency oxygen tanks strapped vertically to a wall, dark grey with white stripes, industrial, survival gear",
+      "count": 1,
+      "w": 1,
+      "h": 1.5,
+      "layer": "below"
+    },
+    {
+      "id": "robotic_arm_station",
+      "prompt": "straight top-down bird's eye view, maintenance station with a medium-sized articulated robotic arm, dark metallic, complex joints, on a work surface, industrial, sci-fi",
+      "count": 1,
+      "w": 2,
+      "h": 1.5,
+      "layer": "below",
+      "anchorType": "utility"
+    },
+    {
+      "id": "wall_porthole_fish",
+      "prompt": "straight top-down bird's eye view, circular porthole window in a thick riveted wall, showing dark ocean outside with small fish swimming by, subtle bioluminescence, retro-futuristic",
+      "count": 3,
+      "w": 1,
+      "h": 1,
+      "layer": "below"
+    },
+    {
+      "id": "wall_kelp_barnacles",
+      "prompt": "straight top-down bird's eye view, circular porthole window in a thick riveted wall, showing dark ocean outside with kelp and barnacles on the exterior hull, subtle grime, retro-futuristic",
+      "count": 2,
+      "w": 1,
+      "h": 1,
+      "layer": "below"
+    },
+    {
+      "id": "floor_lightstrip",
+      "prompt": "straight top-down bird's eye view, glowing blue bioluminescent lightstrip embedded in dark steel grating floor, subtle, thin, linear light source",
+      "count": 4,
+      "w": 1,
+      "h": 1,
+      "layer": "below"
+    },
+    {
+      "id": "round_table",
+      "prompt": "straight top-down bird's eye view, small round metallic table, dark grey, sleek, industrial design",
+      "count": 1,
+      "w": 1.5,
+      "h": 1.5,
+      "layer": "below",
+      "anchorType": "social"
+    }
+  ],
+  "layout": {
+    "floor": [
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "placements": [
+      {
+        "propsIndex": 0,
+        "x": 3,
+        "y": 2
+      },
+      {
+        "propsIndex": 2,
+        "x": 4,
+        "y": 4.5
+      },
+      {
+        "propsIndex": 0,
+        "x": 7,
+        "y": 2
+      },
+      {
+        "propsIndex": 2,
+        "x": 8,
+        "y": 4.5
+      },
+      {
+        "propsIndex": 1,
+        "x": 3,
+        "y": 8
+      },
+      {
+        "propsIndex": 2,
+        "x": 4,
+        "y": 9.5
+      },
+      {
+        "propsIndex": 1,
+        "x": 7,
+        "y": 8
+      },
+      {
+        "propsIndex": 2,
+        "x": 8,
+        "y": 9.5
+      },
+      {
+        "propsIndex": 3,
+        "x": 1,
+        "y": 1
+      },
+      {
+        "propsIndex": 4,
+        "x": 8.5,
+        "y": 14
+      },
+      {
+        "propsIndex": 5,
+        "x": 17,
+        "y": 13
+      },
+      {
+        "propsIndex": 6,
+        "x": 1,
+        "y": 13
+      },
+      {
+        "propsIndex": 7,
+        "x": 14,
+        "y": 2
+      },
+      {
+        "propsIndex": 8,
+        "x": 18,
+        "y": 7
+      },
+      {
+        "propsIndex": 9,
+        "x": 1,
+        "y": 7
+      },
+      {
+        "propsIndex": 9,
+        "x": 1,
+        "y": 9
+      },
+      {
+        "propsIndex": 10,
+        "x": 12,
+        "y": 14
+      },
+      {
+        "propsIndex": 11,
+        "x": 15.5,
+        "y": 9
+      },
+      {
+        "propsIndex": 12,
+        "x": 15,
+        "y": 1
+      },
+      {
+        "propsIndex": 13,
+        "x": 18,
+        "y": 10
+      },
+      {
+        "propsIndex": 14,
+        "x": 1,
+        "y": 4
+      },
+      {
+        "propsIndex": 15,
+        "x": 17,
+        "y": 5
+      },
+      {
+        "propsIndex": 16,
+        "x": 10,
+        "y": 1
+      },
+      {
+        "propsIndex": 16,
+        "x": 18,
+        "y": 1
+      },
+      {
+        "propsIndex": 16,
+        "x": 1,
+        "y": 11
+      },
+      {
+        "propsIndex": 17,
+        "x": 18,
+        "y": 3
+      },
+      {
+        "propsIndex": 17,
+        "x": 18,
+        "y": 12
+      },
+      {
+        "propsIndex": 18,
+        "x": 5,
+        "y": 6
+      },
+      {
+        "propsIndex": 18,
+        "x": 10,
+        "y": 6
+      },
+      {
+        "propsIndex": 18,
+        "x": 5,
+        "y": 11
+      },
+      {
+        "propsIndex": 18,
+        "x": 10,
+        "y": 11
+      },
+      {
+        "propsIndex": 19,
+        "x": 12,
+        "y": 11
+      }
+    ],
+    "wanderPoints": [
+      {
+        "name": "wander_center",
+        "x": 9,
+        "y": 7
+      },
+      {
+        "name": "wander_social",
+        "x": 13,
+        "y": 12
+      },
+      {
+        "name": "wander_utility",
+        "x": 17,
+        "y": 11
+      },
+      {
+        "name": "wander_entrance",
+        "x": 10,
+        "y": 13
+      }
+    ]
+  }
+}

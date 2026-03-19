@@ -1,0 +1,6 @@
+com/salaboy/intentmapping/steps/ProductStepDefinitions.class
+com/salaboy/intentmapping/steps/SharedTestState.class
+com/salaboy/intentmapping/steps/CustomerStepDefinitions.class
+com/salaboy/intentmapping/steps/CommonStepDefinitions.class
+com/salaboy/intentmapping/CucumberTest.class
+com/salaboy/intentmapping/CucumberSpringConfiguration.class

@@ -1,0 +1,7 @@
+com/salaboy/intentmapping/repository/ProductRepository.class
+com/salaboy/intentmapping/repository/CustomerRepository.class
+com/salaboy/intentmapping/controller/ProductController.class
+com/salaboy/intentmapping/IntentMappingApplication.class
+com/salaboy/intentmapping/controller/CustomerController.class
+com/salaboy/intentmapping/model/Product.class
+com/salaboy/intentmapping/model/Customer.class
